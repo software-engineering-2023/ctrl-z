@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.admin-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.admin-button {
+  top: 490px;
+  color: var(--dl-color-gray-white);
+  right: 390px;
+  width: 127px;
+  height: 58px;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  transition: 0.3s;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: var(--dl-color-gray-black);
+}
+
+.admin-text03 {
+  top: 410px;
+  color: var(--dl-color-gray-black);
+  right: 370px;
+  position: absolute;
+  font-size: 23px;
+  align-self: center;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: none;
+  text-decoration: none;
+}
+.admin-button1 {
+  top: 630px;
+  color: var(--dl-color-gray-white);
+  right: 390px;
+  width: 127px;
+  height: 58px;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  transition: 0.3s;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: var(--dl-color-gray-black);
+}
+
+.admin-button2 {
+  top: 750px;
+  color: var(--dl-color-gray-white);
+  right: 390px;
+  width: 127px;
+  height: 58px;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  transition: 0.3s;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: var(--dl-color-gray-black);
+}
+
+.admin-textinput {
+  top: 575px;
+  right: 340px;
+  position: absolute;
+}
+.admin-textinput1 {
+  top: 700px;
+  right: 340px;
+  position: absolute;
+}
+.admin-text10 {
+  top: 305px;
+  left: 651px;
+  position: absolute;
+  align-self: center;
+  font-style: normal;
+  font-weight: 800;
+}
+.admin-text11 {
+  top: 700px;
+  left: 200px;
+  position: absolute;
+}
+.admin-button3 {
+  top: 750px;
+  left: 330px;
+  color: var(--dl-color-gray-white);
+  width: 127px;
+  height: 58px;
+  opacity: 1;
+  padding: 0px;
+  position: absolute;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 0px;
+  background-color: var(--dl-color-gray-black);
+}
+
+.admin-text12 {
+  top: 480px;
+  left: 170px;
+  width: 500px;
+  height: 80px;
+  position: absolute;
+  align-self: stretch;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+}
+.admin-text17 {
+  top: 560px;
+  left: 170px;
+  width: 500px;
+  height: 90px;
+  position: absolute;
+  align-self: stretch;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+}
+.admin-text22 {
+  top: 410px;
+  left: 270px;
+  color: var(--dl-color-gray-black);
+  position: absolute;
+  font-size: 23px;
+  align-self: center;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: none;
+  text-decoration: none;
+}
+.admin-image {
+  top: 125px;
+  width: 1536px;
+  height: 170px;
+  position: absolute;
+  align-self: flex-start;
+  object-fit: cover;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+}
+.admin-container1 {
+  top: 0px;
+  left: 0px;
+  width: 1536px;
+  height: 125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #0c0b20;
+}
+.admin-navlink {
+  top: 41px;
+  right: 170px;
+  width: var(--dl-size-size-xxlarge);
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-white);
+}
+.admin-navlink1 {
+  display: contents;
+}
+.admin-icon {
+  top: 40px;
+  fill: #ffffff;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-color: #ffffff;
+  border-width: 1px;
+  text-decoration: none;
+}
+.admin-container2 {
+  top: 24px;
+  left: 38px;
+  width: 234px;
+  height: 110px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.admin-text23 {
+  top: 11px;
+  left: 71px;
+  position: absolute;
+  text-align: center;
+}
+.admin-text24 {
+  color:#ffffff;
+  font-size: 35px;
+  line-height: 1.2;
+}
+.admin-text25 {
+  color: var(--dl-color-gray-black);
+  font-size: 30px;
+  line-height: 1.2;
+}
+.admin-text26 {
+  color: #003eb3;
+  font-size: 25px;
+  line-height: 1.3;
+}
+.admin-icon2 {
+  top: 0px;
+  fill: #26abf7;
+  left: 18px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.admin-icon4 {
+  top: 27px;
+  fill: #003EB3;
+  left: 0px;
+  color: #171ce3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.admin-navlink2 {
+  display: contents;
+}
+.admin-navlink23 {
+  display: contents;
+}
+.admin-icon6 {
+  top: 40px;
+  fill: #ffffff;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-color: #ffffff;
+  border-width: 1px;
+  text-decoration: none;
+}
+.admin-textinput2 {
+  top: 690px;
+  left: 350px;
+  width: 230px;
+  height: 40px;
+  position: absolute;
+}
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin System Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div>
+    <link href="./admin.css" rel="stylesheet" />
+    <div class="admin-container">
+      <button autofocus class="admin-button button" onclick="showAlertAdd()">
+        <span>
+          <span>Add</span>
+          <br />
+        </span>
+      </button>
+      <script>
+        function showAlertAdd(){
+          alert("User Added to database!");
+        }
+      </script>
+      <h1 class="admin-text03">Users Control</h1>
+      <button autofocus class="admin-button1 button" onclick="showAlertRemoved()">
+        <span>
+          <span>Remove</span>
+          <br />
+        </span>
+      </button>
+      <script>
+        function showAlertRemoved(){
+          alert("User removed from database!");
+        }
+      </script>
+      <button autofocus class="admin-button2 button" onclick="showAlertBlock()">
+        <span>
+          <span>Block</span>
+          <br />
+        </span>
+      </button>
+      <script>
+        function showAlertBlock(){
+          alert("User blocked!");
+        }
+      </script>
+      <input
+        type="text"
+        autofocus
+        minlength="4"
+        placeholder="Enter your user's ID"
+        class="admin-textinput input"
+      />
+      <input
+        type="text"
+        autofocus
+        minlength="4"
+        placeholder="Enter your user's ID"
+        class="admin-textinput1 input"
+      />
+      <h1 class="admin-text10">System Admin</h1>
+      <label class="admin-text11">Issue Number: </label>
+      <button autofocus class="admin-button3 button" onclick="showAlert()">Resolve</button>
+      <script>
+        function showAlert(){
+          alert("Response sent!");
+        }
+      </script>
+      <span class="admin-text12">
+        <span>Technical Issue #47</span>
+        <br />
+        <span>I had a problem loging in.</span>
+        <br />
+      </span>
+      <span class="admin-text17">
+        <span>Technical Issue #48</span>
+        <br />
+        <span>
+           I don&apos;t receive a notification after a finished transaction.
+        </span>
+        <br />
+      </span>
+      <h1 class="admin-text22">Technical Issue Resolution</h1>
+      <img
+        alt="image"
+        src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE3fHxhZG1pbiUyMHN5c3RlbXxlbnwwfHx8fDE2ODUyNzY5OTJ8MA&amp;ixlib=rb-4.0.3&amp;w=1600"
+        class="admin-image"
+      />
+      <div class="admin-container1">
+        <a href="report" class="admin-navlink button">
+          Report Technical Issues
+        </a>
+        <a href="profile" class="admin-navlink1">
+          <svg viewBox="0 0 1024 1024" class="admin-icon">
+            <path
+              d="M576 706.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"
+            ></path>
+          </svg>
+        </a>
+        <div class="admin-container2">
+          <a href="home" class="admin-navlink23">
+          <span class="admin-text23">
+            <span class="admin-text24">CtrlZ</span>
+            <br class="admin-text25" />
+            <span class="admin-text26">Bank</span>
+            <br />
+          </span>
+          <svg viewBox="0 0 950.8571428571428 1024" class="admin-icon2">
+            <path
+              d="M920.571 554.857c0 19.429-8 37.714-21.143 51.429l-42.857 42.857c-13.714 13.714-32.571 21.714-52 21.714s-38.286-8-51.429-21.714l-168-167.429v402.286c0 41.143-34.286 66.857-73.143 66.857h-73.143c-38.857 0-73.143-25.714-73.143-66.857v-402.286l-168 167.429c-13.143 13.714-32 21.714-51.429 21.714s-38.286-8-51.429-21.714l-42.857-42.857c-13.714-13.714-21.714-32-21.714-51.429s8-38.286 21.714-52l372-372c13.143-13.714 32-21.143 51.429-21.143s38.286 7.429 52 21.143l372 372c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path></svg>
+            <svg viewBox="0 0 950.8571428571428 1024" class="admin-icon4">
+            <path
+              d="M920.571 475.429c0 19.429-8 38.286-21.143 51.429l-372 372.571c-13.714 13.143-32.571 21.143-52 21.143s-38.286-8-51.429-21.143l-372-372.571c-13.714-13.143-21.714-32-21.714-51.429s8-38.286 21.714-52l42.286-42.857c13.714-13.143 32.571-21.143 52-21.143s38.286 8 51.429 21.143l168 168v-402.286c0-40 33.143-73.143 73.143-73.143h73.143c40 0 73.143 33.143 73.143 73.143v402.286l168-168c13.143-13.143 32-21.143 51.429-21.143s38.286 8 52 21.143l42.857 42.857c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path>
+          </svg>
+        </div>
+        <a href="notifications" class="admin-navlink2">
+          <svg viewBox="0 0 1024 1024" class="admin-icon6">
+            <path
+              d="M768 682l86 86v42h-684v-42l86-86v-212q0-100 51-174t141-96v-30q0-26 18-45t46-19 46 19 18 45v30q90 22 141 96t51 174v212zM512 938q-36 0-61-24t-25-60h172q0 34-26 59t-60 25z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <input
+        type="text"
+        autofocus
+        minlength="4"
+        placeholder="Enter issue number"
+        class="admin-textinput2 input"
+      />
+    </div>
+  </div>
+  
+</body>
+</html>

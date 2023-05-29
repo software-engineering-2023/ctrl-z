@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.apply-for--card-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.apply-for--card-text {
+  top: 332px;
+  left: 635px;
+  position: absolute;
+  align-self: center;
+  font-style: normal;
+  font-weight: 800;
+}
+.apply-for--card-form {
+  top: 384px;
+  left: 557px;
+  width: 541px;
+  height: 258px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: flex-start;
+}
+.apply-for--card-text1 {
+  top: 40px;
+  left: 0px;
+  position: absolute;
+}
+.apply-for--card-text2 {
+  top: 100px;
+  left: 0px;
+  position: absolute;
+}
+.apply-for--card-textinput {
+  top: 40px;
+  right: 23px;
+  position: absolute;
+}
+.apply-for--card-textinput1 {
+  top: 100px;
+  right: 23px;
+  position: absolute;
+}
+.apply-for--card-button {
+  top: 555px;
+  left: 733px;
+  color: var(--dl-color-gray-white);
+  width: 127px;
+  height: 58px;
+  position: absolute;
+  background-color: var(--dl-color-gray-black);
+}
+.apply-for--card-image {
+  top: 125px;
+  left: 0px;
+  width: 1536px;
+  height: 183px;
+  position: absolute;
+  align-self: flex-start;
+  object-fit: cover;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+}
+.apply-for--card-container1 {
+  top: 0px;
+  left: 0px;
+  width: 1536px;
+  height: 125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #0c0b20;
+}
+.apply-for--card-navlink {
+  top: 41px;
+  right: 170px;
+  width: var(--dl-size-size-xxlarge);
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-white);
+}
+.apply-for--card-navlink1 {
+  display: contents;
+}
+.apply-for--card-icon {
+  top: 40px;
+  fill: #ffffff;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-color: #ffffff;
+  border-width: 1px;
+  text-decoration: none;
+}
+.apply-for--card-container2 {
+  top: 24px;
+  left: 38px;
+  width: 234px;
+  height: 110px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.apply-for--card-text3 {
+  top: 11px;
+  left: 71px;
+  position: absolute;
+  text-align: center;
+}
+.apply-for--card-text4 {
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 1.2;
+}
+.apply-for--card-text5 {
+  color: var(--dl-color-gray-black);
+  font-size: 30px;
+  line-height: 1.2;
+}
+.apply-for--card-text6 {
+  color: #003eb3;
+  font-size: 25px;
+  line-height: 1.3;
+}
+.apply-for--card-icon2 {
+  top: 0px;
+  fill: #26abf7;
+  left: 18px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.apply-for--card-icon4 {
+  top: 27px;
+  fill: #003EB3;
+  left: 0px;
+  color: #171ce3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.apply-for--card-navlink2 {
+  display: contents;
+}
+
+.apply-for--card-navlink23{
+  display: contents;
+}
+.apply-for--card-icon6 {
+  top: 40px;
+  fill: #ffffff;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-color: #ffffff;
+  border-width: 1px;
+  text-decoration: none;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apply for a card</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div>
+    <link href="./apply-for--card.css" rel="stylesheet" />
+    <div class="apply-for--card-container">
+      <h1 class="apply-for--card-text">Card Application</h1>
+      <form class="apply-for--card-form">
+        <label class="apply-for--card-text1">Card Name: </label>
+        <label class="apply-for--card-text2">Account Number: </label>
+        <input
+          type="email"
+          required
+          autofocus
+          placeholder="Enter your card name"
+          class="apply-for--card-textinput input"
+        />
+        <input
+          type="text"
+          required
+          autofocus
+          minlength="4"
+          placeholder="Enter your account number"
+          class="apply-for--card-textinput1 input"
+        />
+      </form>
+      <button class="apply-for--card-button button" onclick="showAlert()">Submit</button>
+      <script>
+        function showAlert(){
+          alert("Successful submission!");
+        }
+      </script>
+      <img
+        alt="image"
+        src="https://images.unsplash.com/photo-1609429019995-8c40f49535a5?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fGJhbmslMjBjYXJkfGVufDB8fHx8MTY4NTI3NzA3NHww&amp;ixlib=rb-4.0.3&amp;w=1600"
+        class="apply-for--card-image"
+      />
+      <div class="apply-for--card-container1">
+        <a href="report" class="apply-for--card-navlink button">
+          Report Technical Issues
+        </a>
+        <a href="profile" class="apply-for--card-navlink1">
+          <svg viewBox="0 0 1024 1024" class="apply-for--card-icon">
+            <path
+              d="M576 706.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"
+            ></path>
+          </svg>
+        </a>
+        <div class="apply-for--card-container2">
+          <a href="home" class="apply-for--card-navlink23">
+          <span class="apply-for--card-text3">
+            <span class="apply-for--card-text4">CtrlZ</span>
+            <br class="apply-for--card-text5" />
+            <span class="apply-for--card-text6">Bank</span>
+            <br />
+          </span>
+          <svg viewBox="0 0 950.8571428571428 1024" class="apply-for--card-icon2">
+            <path
+              d="M920.571 554.857c0 19.429-8 37.714-21.143 51.429l-42.857 42.857c-13.714 13.714-32.571 21.714-52 21.714s-38.286-8-51.429-21.714l-168-167.429v402.286c0 41.143-34.286 66.857-73.143 66.857h-73.143c-38.857 0-73.143-25.714-73.143-66.857v-402.286l-168 167.429c-13.143 13.714-32 21.714-51.429 21.714s-38.286-8-51.429-21.714l-42.857-42.857c-13.714-13.714-21.714-32-21.714-51.429s8-38.286 21.714-52l372-372c13.143-13.714 32-21.143 51.429-21.143s38.286 7.429 52 21.143l372 372c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path></svg>
+            <svg
+            viewBox="0 0 950.8571428571428 1024"
+            class="apply-for--card-icon4"
+          >
+            <path
+              d="M920.571 475.429c0 19.429-8 38.286-21.143 51.429l-372 372.571c-13.714 13.143-32.571 21.143-52 21.143s-38.286-8-51.429-21.143l-372-372.571c-13.714-13.143-21.714-32-21.714-51.429s8-38.286 21.714-52l42.286-42.857c13.714-13.143 32.571-21.143 52-21.143s38.286 8 51.429 21.143l168 168v-402.286c0-40 33.143-73.143 73.143-73.143h73.143c40 0 73.143 33.143 73.143 73.143v402.286l168-168c13.143-13.143 32-21.143 51.429-21.143s38.286 8 52 21.143l42.857 42.857c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path>
+          </svg>
+          </a>
+        </div>
+        <a href="notifications" class="apply-for--card-navlink2">
+          <svg viewBox="0 0 1024 1024" class="apply-for--card-icon6">
+            <path
+              d="M768 682l86 86v42h-684v-42l86-86v-212q0-100 51-174t141-96v-30q0-26 18-45t46-19 46 19 18 45v30q90 22 141 96t51 174v212zM512 938q-36 0-61-24t-25-60h172q0 34-26 59t-60 25z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

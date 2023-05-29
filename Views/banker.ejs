@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.banker-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.banker-container1 {
+  top: 423px;
+  left: 615px;
+  width: 394px;
+  height: 451px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  padding-top: 2px;
+  border-color: var(--dl-color-gray-black);
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 0px;
+  flex-direction: column;
+}
+.banker-text {
+  top: 9px;
+  left: 39px;
+  color: var(--dl-color-gray-black);
+  width: 323px;
+  margin: auto;
+  position: absolute;
+  font-size: 23px;
+  align-self: center;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: none;
+  text-decoration: none;
+}
+.banker-button {
+  left: 130px;
+  color: var(--dl-color-gray-white);
+  width: 127px;
+  bottom: 21px;
+  height: 58px;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  background-color: var(--dl-color-gray-black);
+}
+.banker-text03 {
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-textinput {
+  top: 83px;
+  left: 24px;
+  width: 333px;
+  height: 115px;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-textinput1 {
+  top: 262px;
+  left: 33px;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-text06 {
+  top: 219px;
+  left: 26px;
+  position: absolute;
+}
+.banker-select {
+  top: 323px;
+  left: 33px;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-text07 {
+  top: 39px;
+  left: 93px;
+  color: var(--dl-color-gray-black);
+  width: 323px;
+  margin: auto;
+  position: absolute;
+  font-size: 23px;
+  align-self: center;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: none;
+  text-decoration: none;
+}
+.banker-text10 {
+  top: 324px;
+  left: 587px;
+  position: absolute;
+  align-self: center;
+  font-style: normal;
+  font-weight: 800;
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-container2 {
+  top: 423px;
+  left: 35px;
+  width: 533px;
+  height: 451px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  border-color: var(--dl-color-gray-black);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.banker-form {
+  left: 5px;
+  width: 541px;
+  bottom: 64px;
+  height: 73px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.banker-text11 {
+  top: 0px;
+  left: 19px;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-textinput2 {
+  top: -7px;
+  right: 29px;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-button1 {
+  left: 192px;
+  color: var(--dl-color-gray-white);
+  width: 127px;
+  bottom: 6px;
+  height: 58px;
+  position: absolute;
+  border-style: solid;
+  background-color: var(--dl-color-gray-black);
+}
+.banker-text12 {
+  top: 93px;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  align-self: stretch;
+  border-color: var(--dl-color-gray-black);
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-text16 {
+  top: 154px;
+  right: 0px;
+  width: 100%;
+  position: absolute;
+  align-self: stretch;
+  border-color: var(--dl-color-gray-black);
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-text21 {
+  top: 459px;
+  left: 141px;
+  color: var(--dl-color-gray-black);
+  position: absolute;
+  font-size: 23px;
+  align-self: center;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.5;
+  border-style: solid;
+  text-transform: none;
+  text-decoration: none;
+}
+.banker-image {
+  top: 125px;
+  left: 0px;
+  width: 1536px;
+  height: 183px;
+  position: absolute;
+  align-self: flex-start;
+  object-fit: cover;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+}
+.banker-container3 {
+  top: 423px;
+  left: 1050px;
+  width: 427px;
+  height: 451px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  border-color: var(--dl-color-gray-black);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.banker-form1 {
+  top: 254px;
+  left: -2px;
+  width: 409px;
+  height: 129px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.banker-text22 {
+  top: 3px;
+  left: 127px;
+  position: absolute;
+  border-style: solid;
+}
+.banker-textinput3 {
+  top: 37px;
+  left: 113px;
+  width: 216px;
+  height: 42px;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-select1 {
+  top: 87px;
+  left: 165px;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-button2 {
+  left: 148px;
+  color: var(--dl-color-gray-white);
+  width: 127px;
+  bottom: 10px;
+  height: 58px;
+  position: absolute;
+  border-style: solid;
+  background-color: var(--dl-color-gray-black);
+}
+.banker-text23 {
+  top: 93px;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  align-self: stretch;
+  border-color: var(--dl-color-gray-black);
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-text26 {
+  top: 123px;
+  left: -1px;
+  width: 100%;
+  position: absolute;
+  align-self: stretch;
+  border-color: var(--dl-color-gray-black);
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-text29 {
+  top: 29px;
+  left: 77px;
+  color: var(--dl-color-gray-black);
+  position: absolute;
+  font-size: 23px;
+  align-self: center;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.5;
+  border-style: solid;
+  text-transform: none;
+  text-decoration: none;
+}
+.banker-text30 {
+  top: 183px;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  align-self: stretch;
+  border-color: var(--dl-color-gray-black);
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-text31 {
+  top: 153px;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  align-self: stretch;
+  border-color: var(--dl-color-gray-black);
+  border-style: solid;
+  border-width: 1px;
+}
+.banker-container4 {
+  top: 0px;
+  left: 0px;
+  width: 1536px;
+  height: 125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #0c0b20;
+}
+.banker-navlink {
+  top: 41px;
+  right: 170px;
+  width: var(--dl-size-size-xxlarge);
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-white);
+}
+.banker-navlink1 {
+  display: contents;
+}
+.banker-icon {
+  top: 40px;
+  fill: #ffffff;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-color: #ffffff;
+  border-width: 1px;
+  text-decoration: none;
+}
+.banker-container5 {
+  top: 24px;
+  left: 38px;
+  width: 234px;
+  height: 110px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.banker-text34 {
+  top: 11px;
+  left: 71px;
+  position: absolute;
+  text-align: center;
+}
+.banker-text35 {
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 1.2;
+}
+.banker-text36 {
+  color: var(--dl-color-gray-black);
+  font-size: 30px;
+  line-height: 1.2;
+}
+.banker-text37 {
+  color: #003eb3;
+  font-size: 25px;
+  line-height: 1.3;
+}
+.banker-icon2 {
+  top: 0px;
+  fill: #26abf7;
+  left: 18px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.banker-icon4 {
+  top: 27px;
+  fill: #003EB3;
+  left: 0px;
+  color: #171ce3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.banker-navlink2 {
+  display: contents;
+}
+.banker-navlink23{
+  display: contents;
+}
+.banker-icon6 {
+  top: 40px;
+  fill: #ffffff;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-color: #ffffff;
+  border-width: 1px;
+  text-decoration: none;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banker Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div>
+    <link href="./banker.css" rel="stylesheet" />
+    <div class="banker-container">
+      <div class="banker-container1">
+        <h1 class="banker-text">
+          <span>Send Notifications and Bank</span>
+          <br />
+        </h1>
+        <button class="banker-button button" onclick="showAlert()">
+          <span class="banker-text03">
+            <span>Send</span>
+            <br />
+          </span>
+        </button>
+        <input
+          type="text"
+          required
+          autofocus
+          minlength="4"
+          placeholder="Enter a message"
+          class="banker-textinput input"
+        />
+        <input
+          type="text"
+          required
+          autofocus
+          minlength="4"
+          placeholder="Enter the client ID"
+          class="banker-textinput1 input"
+        />
+        <label class="banker-text06">
+          Client ID (in case of a Notification) : 
+        </label>
+        <select class="banker-select">
+          <option value="Option 1" selected>Bank Announcement</option>
+          <option value="Option 2">Non-Technical Issue Resolution</option>
+        </select>
+        <h1 class="banker-text07">
+          <span>Announcements</span>
+          <br />
+        </h1>
+      </div>
+      <h1 class="banker-text10">Banker System</h1>
+      <div class="banker-container2">
+        <form class="banker-form">
+          <label class="banker-text11">Issue Number: </label>
+          <input
+            type="text"
+            required
+            autofocus
+            minlength="4"
+            placeholder="Enter the issue number"
+            class="banker-textinput2 input"
+          />
+        </form>
+        <button class="banker-button1 button" onclick="showAlert()">Resolve</button>
+        <span class="banker-text12">
+          <span>Technical Issue #30</span>
+          <br />
+          <span>Credit Card loss and I want to apply for a replacement</span>
+        </span>
+        <span class="banker-text16">
+          <span>Technical Issue #31</span>
+          <br />
+          <span>Credit Card was damaged.</span>
+          <br />
+        </span>
+      </div>
+      <h1 class="banker-text21">Non-Technical Issue Resolution</h1>
+      <img
+        alt="image"
+        src="https://images.unsplash.com/photo-1622760274068-a26adafc984f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE1fHxiYW5rZXJ8ZW58MHx8fHwxNjg1Mjc3MTIyfDA&amp;ixlib=rb-4.0.3&amp;w=1600"
+        class="banker-image"
+      />
+      <div class="banker-container3">
+        <form class="banker-form1">
+          <label class="banker-text22">Application Number: </label>
+          <input
+            type="text"
+            required
+            autofocus
+            minlength="4"
+            placeholder="Enter the issue number"
+            class="banker-textinput3 input"
+          />
+          <select class="banker-select1">
+            <option value="Option 1" selected>Reject</option>
+            <option value="Option 2">Accept</option>
+          </select>
+        </form>
+        <button class="banker-button2 button" onclick="showAlert()">Respond</button>
+        <script>
+          function showAlert(){
+            alert("Response sent!");
+          }
+        </script>
+        <span class="banker-text23">
+          <span>Loan Application #21</span>
+          <br />
+        </span>
+        <span class="banker-text26">
+          <span>Credit Card Application #22</span>
+          <br />
+        </span>
+        <h1 class="banker-text29">Applications Response</h1>
+        <span class="banker-text30">Loan Application #24</span>
+        <span class="banker-text31">
+          <span>Cheque Application #23</span>
+          <br />
+        </span>
+      </div>
+      <div class="banker-container4">
+        <a href="report" class="banker-navlink button">
+          Report Technical Issues
+        </a>
+        <a href="profile" class="banker-navlink1">
+          <svg viewBox="0 0 1024 1024" class="banker-icon">
+            <path
+              d="M576 706.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"
+            ></path>
+          </svg>
+        </a>
+        <div class="banker-container5">
+          <a href="home" class="banker-navlink23">
+          <span class="banker-text34">
+            <span class="banker-text35">CtrlZ</span>
+            <br class="banker-text36" />
+            <span class="banker-text37">Bank</span>
+            <br />
+          </span>
+          <svg viewBox="0 0 950.8571428571428 1024" class="banker-icon2">
+            <path
+              d="M920.571 554.857c0 19.429-8 37.714-21.143 51.429l-42.857 42.857c-13.714 13.714-32.571 21.714-52 21.714s-38.286-8-51.429-21.714l-168-167.429v402.286c0 41.143-34.286 66.857-73.143 66.857h-73.143c-38.857 0-73.143-25.714-73.143-66.857v-402.286l-168 167.429c-13.143 13.714-32 21.714-51.429 21.714s-38.286-8-51.429-21.714l-42.857-42.857c-13.714-13.714-21.714-32-21.714-51.429s8-38.286 21.714-52l372-372c13.143-13.714 32-21.143 51.429-21.143s38.286 7.429 52 21.143l372 372c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path></svg>
+            <svg viewBox="0 0 950.8571428571428 1024" class="banker-icon4">
+            <path
+              d="M920.571 475.429c0 19.429-8 38.286-21.143 51.429l-372 372.571c-13.714 13.143-32.571 21.143-52 21.143s-38.286-8-51.429-21.143l-372-372.571c-13.714-13.143-21.714-32-21.714-51.429s8-38.286 21.714-52l42.286-42.857c13.714-13.143 32.571-21.143 52-21.143s38.286 8 51.429 21.143l168 168v-402.286c0-40 33.143-73.143 73.143-73.143h73.143c40 0 73.143 33.143 73.143 73.143v402.286l168-168c13.143-13.143 32-21.143 51.429-21.143s38.286 8 52 21.143l42.857 42.857c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path>
+          </svg>
+          </a>
+        </div>
+        <a href="notifications" class="banker-navlink2">
+          <svg viewBox="0 0 1024 1024" class="banker-icon6">
+            <path
+              d="M768 682l86 86v42h-684v-42l86-86v-212q0-100 51-174t141-96v-30q0-26 18-45t46-19 46 19 18 45v30q90 22 141 96t51 174v212zM512 938q-36 0-61-24t-25-60h172q0 34-26 59t-60 25z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

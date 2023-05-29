@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.apply-loan-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.apply-loan-text {
+  top: 330px;
+  left: 630px;
+  position: absolute;
+  align-self: center;
+  font-style: normal;
+  font-weight: 800;
+}
+.apply-loan-form {
+  top: 398px;
+  left: 557px;
+  width: 507px;
+  height: 315px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.apply-loan-text01 {
+  top: 20px;
+  left: 0px;
+  position: absolute;
+}
+.apply-loan-textinput {
+  top: 20px;
+  right: 20px;
+  position: absolute;
+}
+.apply-loan-text02 {
+  top: 80px;
+  left: 0px;
+  position: absolute;
+}
+.apply-loan-text03 {
+  top: 20px;
+  left: 0px;
+  position: absolute;
+}
+.apply-loan-textinput1 {
+  top: 80px;
+  right: 18px;
+  position: absolute;
+}
+.apply-loan-text04 {
+  top: 260px;
+  left: 0px;
+  position: absolute;
+}
+.apply-loan-text05 {
+  top: 200px;
+  left: 0px;
+  position: absolute;
+}
+.apply-loan-text06 {
+  top: 140px;
+  left: 0px;
+  position: absolute;
+}
+.apply-loan-select {
+  top: 204px;
+  left: 177px;
+  position: absolute;
+}
+.apply-loan-select1 {
+  left: 180px;
+  bottom: 31px;
+  position: absolute;
+}
+.apply-loan-button {
+  top: 717px;
+  left: 757px;
+  color: var(--dl-color-gray-white);
+  width: 127px;
+  height: 58px;
+  position: absolute;
+  background-color: var(--dl-color-gray-black);
+}
+.apply-loan-image {
+  top: 125px;
+  left: 0px;
+  width: 1536px;
+  height: 183px;
+  position: absolute;
+  align-self: flex-start;
+  object-fit: cover;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+}
+.apply-loan-container1 {
+  top: 0px;
+  left: 0px;
+  width: 1536px;
+  height: 125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #0c0b20;
+}
+.apply-loan-navlink {
+  top: 41px;
+  right: 170px;
+  width: var(--dl-size-size-xxlarge);
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-white);
+}
+.apply-loan-navlink1 {
+  display: contents;
+}
+.apply-loan-icon {
+  top: 40px;
+  fill: #ffffff;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-color: #ffffff;
+  border-width: 1px;
+  text-decoration: none;
+}
+.apply-loan-container2 {
+  top: 24px;
+  left: 38px;
+  width: 234px;
+  height: 110px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.apply-loan-text07 {
+  top: 11px;
+  left: 71px;
+  position: absolute;
+  text-align: center;
+}
+.apply-loan-text08 {
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 1.2;
+}
+.apply-loan-text09 {
+  color: var(--dl-color-gray-black);
+  font-size: 30px;
+  line-height: 1.2;
+}
+.apply-loan-text10 {
+  color: #003eb3;
+  font-size: 25px;
+  line-height: 1.3;
+}
+.apply-loan-icon2 {
+  top: 0px;
+  fill: #26abf7;
+  left: 18px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.apply-loan-icon4 {
+  top: 27px;
+  fill: #003EB3;
+  left: 0px;
+  color: #171ce3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.apply-loan-navlink2 {
+  display: contents;
+}
+
+.apply-loan-navlink23{
+  display: contents;
+}
+.apply-loan-icon6 {
+  top: 40px;
+  fill: #ffffff;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-color: #ffffff;
+  border-width: 1px;
+  text-decoration: none;
+}
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apply for Loan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div>
+    <link href="./apply-loan.css" rel="stylesheet" />
+    <div class="apply-loan-container">
+      <h1 class="apply-loan-text">Loan Application</h1>
+      <form class="apply-loan-form">
+        <label class="apply-loan-text01">Account Number: </label>
+        <input
+          type="text"
+          required
+          autofocus
+          minlength="4"
+          placeholder="Enter your account number"
+          class="apply-loan-textinput input"
+        />
+        <label class="apply-loan-text02">Loan Amount: </label>
+        <label class="apply-loan-text03">Account Number: </label>
+        <input
+          type="text"
+          required
+          autofocus
+          minlength="4"
+          placeholder="Enter the amount"
+          class="apply-loan-textinput1 input"
+        />
+        <label class="apply-loan-text04">Type: </label>
+        <label class="apply-loan-text05">Duration in years:</label>
+        <label class="apply-loan-text06">Interest Rate:          7%</label>
+        <select class="apply-loan-select">
+          <option value="Option 1">5 years</option>
+          <option value="Option 2">10 years</option>
+          <option value="Option 3">15 years</option>
+        </select>
+        <select class="apply-loan-select1">
+          <option value="Option 1" selected>Personal loan</option>
+          <option value="Option 1">Car loan</option>
+        </select>
+      </form>
+      <button class="apply-loan-button button" onclick="showAlert()">Submit</button>
+      <script>
+        function showAlert(){
+          alert("Successful submission!");
+        }
+      </script>
+      <img
+        alt="image"
+        src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fGxvYW58ZW58MHx8fHwxNjg1Mjc3MDk1fDA&amp;ixlib=rb-4.0.3&amp;w=1600"
+        class="apply-loan-image"
+      />
+      <div class="apply-loan-container1">
+        <a href="report" class="apply-loan-navlink button">
+          Report Technical Issues
+        </a>
+        <a href="profile" class="apply-loan-navlink1">
+          <svg viewBox="0 0 1024 1024" class="apply-loan-icon">
+            <path
+              d="M576 706.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"
+            ></path>
+          </svg>
+        </a>
+        <div class="apply-loan-container2">
+          <a href="home" class="apply-loan-navlink23">
+          <span class="apply-loan-text07">
+            <span class="apply-loan-text08">CtrlZ</span>
+            <br class="apply-loan-text09" />
+            <span class="apply-loan-text10">Bank</span>
+            <br />
+          </span>
+          <svg viewBox="0 0 950.8571428571428 1024" class="apply-loan-icon2">
+            <path
+              d="M920.571 554.857c0 19.429-8 37.714-21.143 51.429l-42.857 42.857c-13.714 13.714-32.571 21.714-52 21.714s-38.286-8-51.429-21.714l-168-167.429v402.286c0 41.143-34.286 66.857-73.143 66.857h-73.143c-38.857 0-73.143-25.714-73.143-66.857v-402.286l-168 167.429c-13.143 13.714-32 21.714-51.429 21.714s-38.286-8-51.429-21.714l-42.857-42.857c-13.714-13.714-21.714-32-21.714-51.429s8-38.286 21.714-52l372-372c13.143-13.714 32-21.143 51.429-21.143s38.286 7.429 52 21.143l372 372c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path></svg>
+            <svg viewBox="0 0 950.8571428571428 1024" class="apply-loan-icon4">
+            <path
+              d="M920.571 475.429c0 19.429-8 38.286-21.143 51.429l-372 372.571c-13.714 13.143-32.571 21.143-52 21.143s-38.286-8-51.429-21.143l-372-372.571c-13.714-13.143-21.714-32-21.714-51.429s8-38.286 21.714-52l42.286-42.857c13.714-13.143 32.571-21.143 52-21.143s38.286 8 51.429 21.143l168 168v-402.286c0-40 33.143-73.143 73.143-73.143h73.143c40 0 73.143 33.143 73.143 73.143v402.286l168-168c13.143-13.143 32-21.143 51.429-21.143s38.286 8 52 21.143l42.857 42.857c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path>
+          </svg>
+          </a>
+        </div>
+        <a href="notifications" class="apply-loan-navlink2">
+          <svg viewBox="0 0 1024 1024" class="apply-loan-icon6">
+            <path
+              d="M768 682l86 86v42h-684v-42l86-86v-212q0-100 51-174t141-96v-30q0-26 18-45t46-19 46 19 18 45v30q90 22 141 96t51 174v212zM512 938q-36 0-61-24t-25-60h172q0 34-26 59t-60 25z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
