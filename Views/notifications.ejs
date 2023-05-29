@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.notifications-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.notifications-container1 {
+  top: 320px;
+  left: 413px;
+  width: 831px;
+  height: 453px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+}
+.notifications-container2 {
+  top: 80px;
+  left: 0px;
+  width: 800px;
+  height: 73px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  flex-direction: column;
+}
+.notifications-text01 {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  text-decoration: none;
+}
+.notifications-text05 {
+  top: 0px;
+  left: 253px;
+  position: absolute;
+  align-self: center;
+  font-style: normal;
+  font-weight: 800;
+}
+.notifications-container3 {
+  top: 320px;
+  left: 0px;
+  width: 800px;
+  height: 73px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  flex-direction: column;
+  background-color: #D9D9D9;
+}
+.notifications-text07 {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  text-decoration: none;
+}
+.notifications-container4 {
+  top: 240px;
+  left: 0px;
+  width: 800px;
+  height: 73px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  flex-direction: column;
+}
+.notifications-text12 {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  text-decoration: none;
+}
+.notifications-container5 {
+  top: 160px;
+  left: 0px;
+  width: 800px;
+  height: 73px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  flex-direction: column;
+  background-color: #D9D9D9;
+}
+.notifications-text17 {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  text-decoration: none;
+}
+.notifications-checkbox {
+  top: -56px;
+  right: 37px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.notifications-checkbox1 {
+  right: 40px;
+  width: 30px;
+  bottom: -142px;
+  height: 30px;
+  position: absolute;
+}
+.notifications-checkbox2 {
+  right: 40px;
+  width: 30px;
+  bottom: -63px;
+  height: 30px;
+  position: absolute;
+}
+.notifications-checkbox3 {
+  top: 20px;
+  right: 39px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.notifications-image {
+  top: 125px;
+  left: 0px;
+  width: 1536px;
+  height: 170px;
+  position: absolute;
+  object-fit: cover;
+}
+.notifications-container6 {
+  top: 0px;
+  left: 0px;
+  width: 1536px;
+  height: 125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #0c0b20;
+}
+.notifications-navlink {
+  top: 41px;
+  right: 170px;
+  width: var(--dl-size-size-xxlarge);
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-white);
+}
+.notifications-navlink1 {
+  display: contents;
+}
+.notifications-icon {
+  top: 40px;
+  fill: #ffffff;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-color: #ffffff;
+  border-width: 1px;
+  text-decoration: none;
+}
+.notifications-container7 {
+  top: 24px;
+  left: 38px;
+  width: 234px;
+  height: 110px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.notifications-text21 {
+  top: 11px;
+  left: 71px;
+  position: absolute;
+  text-align: center;
+}
+.notifications-text22 {
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 1.2;
+}
+.notifications-text23 {
+  color: var(--dl-color-gray-black);
+  font-size: 30px;
+  line-height: 1.2;
+}
+.notifications-text24 {
+  color: #003eb3;
+  font-size: 25px;
+  line-height: 1.3;
+}
+.notifications-icon2 {
+  top: 0px;
+  fill: #26abf7;
+  left: 18px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.notifications-icon4 {
+  top: 27px;
+  fill: #003EB3;
+  left: 0px;
+  color: #171ce3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.notifications-navlink2 {
+  display: contents;
+}
+.notifications-navlink7{
+  display: contents;
+}
+.notifications-icon6 {
+  top: 40px;
+  fill: #ffffff;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-color: #ffffff;
+  border-width: 1px;
+  text-decoration: none;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div>
+    <link href="./notifications.css" rel="stylesheet" />
+    <div class="notifications-container">
+      <div class="notifications-container1">
+        <div class="notifications-container2">
+          <span>
+            <span class="notifications-text01">1. Pay Water Bill</span>
+            <br />
+            <span>Your water bill is due to 30/5/2023</span>
+            <br />
+          </span>
+        </div>
+        <h1 class="notifications-text05">Notifications</h1>
+        <div class="notifications-container3">
+          <span>
+            <span class="notifications-text07">4. Pay Gas Bill</span>
+            <br />
+            <span>Your gas bill is due to 29/5/2023</span>
+            <br />
+          </span>
+        </div>
+        <div class="notifications-container4">
+          <span>
+            <span class="notifications-text12">3.Technical issue Solved</span>
+            <br />
+            <span>The technical issue you reported last week is solved.</span>
+            <br />
+          </span>
+        </div>
+        <div class="notifications-container5">
+          <span>
+            <span class="notifications-text17">2. Pay Electricity Bill</span>
+            <br />
+            <span>Your electricity bill is due to 31/5/2023</span>
+            <br />
+          </span>
+          <input type="checkbox" class="notifications-checkbox" />
+          <input type="checkbox" checked="true" class="notifications-checkbox1" />
+          <input type="checkbox" class="notifications-checkbox2" />
+          <input type="checkbox" checked class="notifications-checkbox3" />
+        </div>
+      </div>
+      <img
+        alt="image"
+        src="https://images.unsplash.com/photo-1603539240352-8f2cce3257c4?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fG5vdGlmaWNhdGlvbiUyMGVtYWlsJTIwfGVufDB8fHx8MTY4NTI3Nzc2NXww&amp;ixlib=rb-4.0.3&amp;w=1600"
+        class="notifications-image"
+      />
+      <div class="notifications-container6">
+        <a href="report" class="notifications-navlink button">
+          Report Technical Issues
+        </a>
+        <a href="profile" class="notifications-navlink1">
+          <svg viewBox="0 0 1024 1024" class="notifications-icon">
+            <path
+              d="M576 706.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"
+            ></path>
+          </svg>
+        </a>
+        <div class="notifications-container7">
+          <a href="home" class="notifications-navlink7">
+          <span class="notifications-text21">
+            <span class="notifications-text22">CtrlZ</span>
+            <br class="notifications-text23" />
+            <span class="notifications-text24">Bank</span>
+            <br />
+          </span>
+          <svg viewBox="0 0 950.8571428571428 1024" class="notifications-icon2">
+            <path
+              d="M920.571 554.857c0 19.429-8 37.714-21.143 51.429l-42.857 42.857c-13.714 13.714-32.571 21.714-52 21.714s-38.286-8-51.429-21.714l-168-167.429v402.286c0 41.143-34.286 66.857-73.143 66.857h-73.143c-38.857 0-73.143-25.714-73.143-66.857v-402.286l-168 167.429c-13.143 13.714-32 21.714-51.429 21.714s-38.286-8-51.429-21.714l-42.857-42.857c-13.714-13.714-21.714-32-21.714-51.429s8-38.286 21.714-52l372-372c13.143-13.714 32-21.143 51.429-21.143s38.286 7.429 52 21.143l372 372c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path></svg>
+            <svg viewBox="0 0 950.8571428571428 1024" class="notifications-icon4">
+            <path
+              d="M920.571 475.429c0 19.429-8 38.286-21.143 51.429l-372 372.571c-13.714 13.143-32.571 21.143-52 21.143s-38.286-8-51.429-21.143l-372-372.571c-13.714-13.143-21.714-32-21.714-51.429s8-38.286 21.714-52l42.286-42.857c13.714-13.143 32.571-21.143 52-21.143s38.286 8 51.429 21.143l168 168v-402.286c0-40 33.143-73.143 73.143-73.143h73.143c40 0 73.143 33.143 73.143 73.143v402.286l168-168c13.143-13.143 32-21.143 51.429-21.143s38.286 8 52 21.143l42.857 42.857c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path>
+          </svg>
+          </a>
+        </div>
+        <a href="notifications" class="notifications-navlink2">
+          <svg viewBox="0 0 1024 1024" class="notifications-icon6">
+            <path
+              d="M768 682l86 86v42h-684v-42l86-86v-212q0-100 51-174t141-96v-30q0-26 18-45t46-19 46 19 18 45v30q90 22 141 96t51 174v212zM512 938q-36 0-61-24t-25-60h172q0 34-26 59t-60 25z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

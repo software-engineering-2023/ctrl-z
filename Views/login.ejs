@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.login-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+}
+/* .login-button {
+  top: 529px;
+  left: 713px;
+  color: #ffffff;
+  width: 113px;
+  height: 56px;
+  position: absolute;
+  transition: 0.3s;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #000000;
+}
+.login-button:focus {
+  display: flex;
+} */
+.login-button{
+  top: 500px;
+  left: 700px;
+  color: #ffffff;
+  background-color: #000000;
+  width: 113px;
+  height: 56px;
+  position: fixed;
+
+}
+.login-text {
+  top: 315px;
+  left: 704px;
+  position: absolute;
+  align-self: center;
+  font-style: normal;
+  font-weight: 800;
+}
+.login-image {
+  top: 125px;
+  left: 0px;
+  width: 100%;
+  height: 176px;
+  position: absolute;
+  object-fit: cover;
+}
+.login-navlink {
+  display: contents;
+}
+
+.login-text1 {
+  top: 602px;
+  left: 624px;
+  color: #2f29df;
+  width: 288px;
+  height: 35px;
+  position: absolute;
+  text-align: center;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.login-form {
+  top: 358px;
+  left: 571px;
+  width: 458px;
+  height: 169px;
+  display: flex;
+  position: absolute;
+}
+.login-text2 {
+  top: 46px;
+  left: 0px;
+  position: absolute;
+}
+.login-text3 {
+  top: 110px;
+  left: 3px;
+  position: absolute;
+}
+.login-textinput {
+  top: 39px;
+  left: 110px;
+  position: absolute;
+}
+.login-textinput1 {
+  top: 98px;
+  left: 110px;
+  position: absolute;
+}
+.login-container1 {
+  top: 0px;
+  left: 0px;
+  width: 1536px;
+  height: 125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #0c0b20;
+}
+.login-navlink1 {
+  top: 40px;
+  right: 45px;
+  width: var(--dl-size-size-xxlarge);
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-white);
+}
+.login-container2 {
+  top: 24px;
+  left: 38px;
+  width: 234px;
+  height: 110px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-text4 {
+  top: 11px;
+  left: 71px;
+  position: absolute;
+  text-align: center;
+}
+.login-text5 {
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 1.2;
+}
+.login-text6 {
+  color: var(--dl-color-gray-black);
+  font-size: 30px;
+  line-height: 1.2;
+}
+.login-text7 {
+  color: #003eb3;
+  font-size: 25px;
+  line-height: 1.3;
+}
+.login-icon {
+  top: 0px;
+  fill: #26abf7;
+  left: 18px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.login-icon2 {
+  top: 27px;
+  fill: #003EB3;
+  left: 0px;
+  color: #171ce3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log in</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div>
+    <link href="./login.css" rel="stylesheet" />
+    <div class="login-container">
+      <h1 class="login-text">Log in</h1>
+      <img
+        alt="image"
+        src="https://images.unsplash.com/photo-1633773455198-434f4110ef74?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDd8fGJsdWUlMjBmb250fGVufDB8fHx8MTY4NTI3NzU1OHww&amp;ixlib=rb-4.0.3&amp;w=1500"
+        class="login-image"
+      />
+      <a href="register" class="login-navlink">
+        <label class="login-text1">Don&apos;t have an account ?</label>
+      </a>
+      <form class="login-form" method="POST">
+        <label class="login-text2">Username:</label>
+        <label class="login-text3">Password: </label>
+        <input
+          type="text"
+          autofocus
+          placeholder="Enter your Username"
+          class="login-textinput input"
+          name="user"
+        />
+        <input
+          type="password"
+          autofocus
+          minlength="4"
+          placeholder="Enter your password"
+          class="login-textinput1 input"
+          name="pass"
+        />
+        <input type="submit" class="login-button"></input>
+      </form>
+      <div class="login-container1">
+        <a href="report" class="login-navlink1 button">
+          Report Technical Issues
+        </a>
+        <div class="login-container2">
+          <span class="login-text4">
+            <span class="login-text5">CtrlZ</span>
+            <br class="login-text6" />
+            <span class="login-text7">Bank</span>
+            <br />
+          </span>
+          <svg viewBox="0 0 950.8571428571428 1024" class="login-icon">
+            <path
+              d="M920.571 554.857c0 19.429-8 37.714-21.143 51.429l-42.857 42.857c-13.714 13.714-32.571 21.714-52 21.714s-38.286-8-51.429-21.714l-168-167.429v402.286c0 41.143-34.286 66.857-73.143 66.857h-73.143c-38.857 0-73.143-25.714-73.143-66.857v-402.286l-168 167.429c-13.143 13.714-32 21.714-51.429 21.714s-38.286-8-51.429-21.714l-42.857-42.857c-13.714-13.714-21.714-32-21.714-51.429s8-38.286 21.714-52l372-372c13.143-13.714 32-21.143 51.429-21.143s38.286 7.429 52 21.143l372 372c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path></svg>
+            <svg viewBox="0 0 950.8571428571428 1024" class="login-icon2">
+            <path
+              d="M920.571 475.429c0 19.429-8 38.286-21.143 51.429l-372 372.571c-13.714 13.143-32.571 21.143-52 21.143s-38.286-8-51.429-21.143l-372-372.571c-13.714-13.143-21.714-32-21.714-51.429s8-38.286 21.714-52l42.286-42.857c13.714-13.143 32.571-21.143 52-21.143s38.286 8 51.429 21.143l168 168v-402.286c0-40 33.143-73.143 73.143-73.143h73.143c40 0 73.143 33.143 73.143 73.143v402.286l168-168c13.143-13.143 32-21.143 51.429-21.143s38.286 8 52 21.143l42.857 42.857c13.143 13.714 21.143 32.571 21.143 52z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
